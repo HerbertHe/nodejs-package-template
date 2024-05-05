@@ -1,0 +1,43 @@
+{
+  "name": "nodejs-package-template",
+  "version": "1.0.0",
+  "description": "Template for creating a simple nodejs package",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "node": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "init:package": "node ./scripts/init.js",
+    "test": ""
+  },
+  "keywords": [
+    "template",
+    "nodejs"
+  ],
+  "author": "Herbert He<Herbert.He0229@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/HerbertHe/nodejs-package-template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HerbertHe/nodejs-package-template.git"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
+}
