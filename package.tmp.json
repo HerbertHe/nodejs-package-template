@@ -22,7 +22,6 @@
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
-    "init:package": "node ./scripts/init.js",
     "test": ""
   },
   "keywords": "__PACKAGE_KEYWORDS__",
